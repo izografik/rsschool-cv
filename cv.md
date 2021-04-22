@@ -3,9 +3,9 @@
 ## Igor Chizhikov
 
 ## Contacts:
-* &#9993 gmail: izografik@gmail.com
-* &#9742 phone: + 375(29)5658710
-* &#9997 discord: Igor_Chizhikov#3765
+* gmail: izografik@gmail.com
+* phone: + 375(29)5658710
+* discord: Igor_Chizhikov#3765
 
 
 ## About me:
@@ -14,15 +14,44 @@ I am 30 years old. I'm a translator by education (MSLU, language: German), but 1
 ## About my skills:
 
 ###### Hard:
-* ○ Swift
-* ○ UIKit
-* ○ Layout & constraints in code
-* ○ Foundation
-* ○ Git
-* ○ CocoaPods
+* Swift
+* UIKit
+* Layout & constraints in code
+* Foundation
+* Git
+* CocoaPods
 
 ###### Soft:
-* ○ “Master degree” in building good relationships
-* ○ Self management
-* ○ “Product-oriented thinking”
-* ○ Resolving conflicts in the team
+* “Master degree” in building good relationships
+* Self management
+* “Product-oriented thinking”
+* Resolving conflicts in the team
+
+## Latest code examples:
+
+class MusicPlayer {
+    static let shared = MusicPlayer()
+    var audioPlayer: AVAudioPlayer?
+
+    func startBackgroundMusic() {
+        if let bundle = Bundle.main.path(forResource: "backgroundMusic", ofType: "mp3") {
+            let backgroundMusic = NSURL(fileURLWithPath: bundle)
+            do {
+                audioPlayer = try AVAudioPlayer(contentsOf:backgroundMusic as URL)
+                guard let audioPlayer = audioPlayer else { return }
+                audioPlayer.numberOfLoops = -1
+                audioPlayer.prepareToPlay()
+                audioPlayer.play()
+            } catch {
+                print(error)
+            }
+        }
+    }
+    
+    func stopBackgroundMusic() {
+        guard let audioPlayer = audioPlayer else { return }
+        audioPlayer.stop()
+    }
+}
+
+
