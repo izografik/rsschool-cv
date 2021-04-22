@@ -66,6 +66,6 @@ class MusicPlayer {
 * youTube: lectures, tutorials
 
 ## What about English?
-my english is at a low level, but i learn it in free time. 
+my english is at low level, but i learn it in free time. 
 
 
