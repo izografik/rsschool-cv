@@ -54,4 +54,18 @@ class MusicPlayer {
     }
 }
 
+## About my experience:
+
+* made a simple app with UITabBarController,UITableView,Networking (puzzle-sliding game 3x3, 4x4, 5x5) 
+* made a simple app UIImagePickerController and GestureRecognizers
+
+## About my education:
+
+* school course (TeachMeSkills) - iOS development
+* books, such as: “Swift (Vasily Usov)”, “Programming iOS 14 (Matt Neuburg)” etc
+* youTube: lectures, tutorials
+
+## What about English?
+my english is at a low level, but i learn it in free time. 
+
 
